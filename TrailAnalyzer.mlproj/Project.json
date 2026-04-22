@@ -1,0 +1,29 @@
+{
+  "activityEntities" : [
+    "projectCreated",
+    [
+      {
+        "createdDate" : "2026-04-22T19:20:07Z",
+        "event" : "projectCreated",
+        "id" : "9FE0DF9E-BEE9-4A95-B6FD-99725A6C7AB4",
+        "subtitle" : "TrailAnalyzer",
+        "title" : "Project Created"
+      }
+    ]
+  ],
+  "authorName" : "Supun Liyanage",
+  "createdDate" : "2026-04-22T19:20:07Z",
+  "description" : "",
+  "id" : "FE3FFADD-E9CB-481C-B0C7-D787DED959B0",
+  "license" : "",
+  "location" : "",
+  "modifiedDate" : "2026-04-22T19:20:07Z",
+  "projectName" : "TrailAnalyzer",
+  "settingsEntity" : {
+    "snapshotOnExtendTraining" : true,
+    "snapshotOnResumeTraining" : false
+  },
+  "taskType" : "generalRegresor",
+  "title" : "Tabular Regression",
+  "version" : "1.1"
+}
