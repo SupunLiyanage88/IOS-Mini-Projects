@@ -1,129 +1,186 @@
-# iOS Mini Projects
+# 📱 iOS Mini Projects
 
-> A collection of SwiftUI apps built while exploring iOS development concepts — from animations and onboarding flows to Core ML–powered predictions.
+A collection of SwiftUI mini apps built while learning core iOS development concepts — from animations and onboarding flows to Core ML integration.
 
-**SwiftUI** · **Core ML** · **5 projects** · **Xcode**
+> Built with SwiftUI · Xcode · iOS 16+
 
 ---
 
 ## Projects
 
-### 01 · DiceView
+| # | App | Description |
+|---|-----|-------------|
+| 1 | [DiceView](#1-diceview) | Animated multi-dice roller |
+| 2 | [OnboardingFlow](#2-onboardingflow) | Paginated onboarding experience |
+| 3 | [Pick-a-Pal](#3-pick-a-pal) | Random name picker for groups |
+| 4 | [TrailAnalyzer](#4-trailanalyzer) | ML-powered trail risk predictor |
+| 5 | [WeatherForecast](#5-weatherforecast) | Component-based forecast UI |
 
-Interactive dice roller. Add or remove dice and watch them roll with smooth animation.
+---
 
-**Highlights**
-- Dynamic dice count from 1 to 5
+## 1. DiceView
+
+An interactive dice roller with dynamic dice management and smooth roll animations.
+
+**What I learned:** Reusable view components, `withAnimation`, SF Symbols, dynamic state management
+
+**Features**
+- Add or remove dice (1–5 at a time)
+- Animated roll results using `withAnimation`
 - Reusable `DiceView` component
-- Animated updates with `withAnimation`
-- Styled background and SF Symbols controls
+- Styled UI with SF Symbols controls
 
 **Core Files**
-- `DiceView/DiceView/ContentView.swift`
-- `DiceView/DiceView/DiceView.swift`
+```
+DiceView/DiceView/
+├── ContentView.swift
+└── DiceView.swift
+```
+
+**Screenshots**
+
+| Default | After Roll |
+|---------|------------|
+| ![DiceView 1](Screenshots/DiceView/screenshot-1.PNG) | ![DiceView 2](Screenshots/DiceView/screenshot-2.PNG) |
 
 ---
 
-### 02 · OnboardingFlow
+## 2. OnboardingFlow
 
-Multi-page onboarding with gradient theming and a reusable feature card layout.
+A multi-page onboarding experience using `TabView` with a page-style layout and reusable feature cards.
 
-**Highlights**
-- Paginated via `.tabViewStyle(.page)`
-- Reusable `FeatureCard` component
-- Gradient-themed asset colors
+**What I learned:** `.tabViewStyle(.page)`, asset catalog colors, gradient theming, component decomposition
+
+**Features**
+- Paginated onboarding with `.tabViewStyle(.page)`
+- Gradient-themed UI using asset colors
 - Dedicated welcome and features pages
+- Reusable `FeatureCard` component for scalable content
 
 **Core Files**
-- `OnboardingFlow/OnboardingFlow/ContentView.swift`
-- `OnboardingFlow/OnboardingFlow/WelcomePage.swift`
-- `OnboardingFlow/OnboardingFlow/FeaturesPage.swift`
-- `OnboardingFlow/OnboardingFlow/FeatureCard.swift`
+```
+OnboardingFlow/OnboardingFlow/
+├── ContentView.swift
+├── WelcomePage.swift
+├── FeaturesPage.swift
+└── FeatureCard.swift
+```
+
+**Screenshots**
+
+| Welcome Page | Features Page |
+|-------------|---------------|
+| ![OnboardingFlow 1](Screenshots/OnboardingFlow/screenshot-1.PNG) | ![OnboardingFlow 2](Screenshots/OnboardingFlow/screenshot-2.PNG) |
 
 ---
 
-### 03 · Pick-a-Pal
+## 3. Pick-a-Pal
 
-Random name picker for groups, classrooms, and team activities.
+A random name picker built for classrooms, teams, and group activities.
 
-**Highlights**
-- Add names via text field submit
-- Display all names in a list
-- Randomly selects from the current list
-- Optional removal to avoid repeats
+**What I learned:** Text field submission, list management, randomization, optional state handling
+
+**Features**
+- Add names quickly via text field submit
+- View all names in a scrollable list
+- Randomly pick a name from the pool
+- Optionally remove selected names to avoid repeats
 
 **Core Files**
-- `Pick-a-Pal/Pick-a-Pal/ContentView.swift`
+```
+Pick-a-Pal/Pick-a-Pal/
+└── ContentView.swift
+```
+
+**Screenshots**
+
+| Name List | Random Pick |
+|-----------|-------------|
+| ![Pick-a-Pal 1](Screenshots/Pick-a-Pal/screenshot-1.PNG) | ![Pick-a-Pal 2](Screenshots/Pick-a-Pal/screenshot-2.PNG) |
 
 ---
 
-### 04 · TrailAnalyzer `Core ML`
+## 4. TrailAnalyzer
 
-Enter trail data and get an ML-powered risk prediction — Easy, Moderate, Difficult, or High Risk.
+A trail risk prediction app powered by a custom Core ML model. Users input trail data and receive a categorized risk assessment with guidance.
 
-**Highlights**
-- Form-based input: distance, elevation, terrain, wildlife danger
-- Core ML prediction using generated `TrailAnalyzerModel`
-- Risk categorisation with summary cards
-- Custom `TrailTheme` throughout the UI
+**What I learned:** Core ML integration, form-based input, model training with Create ML, custom theming
+
+**Features**
+- Form-based input: distance, elevation, terrain type, wildlife danger
+- On-device ML prediction using a trained `TrailAnalyzerModel`
+- Four risk categories: Easy · Moderate · Difficult · High Risk
+- Detailed results with summary risk cards
+- Custom app theming via `TrailTheme`
 
 **Core Files**
-- `TrailAnalyzer/TrailAnalyzer/Views/ContentView.swift`
-- `TrailAnalyzer/TrailAnalyzer/Views/TrailInfoView.swift`
-- `TrailAnalyzer/TrailAnalyzer/Views/PredictionView.swift`
-- `TrailAnalyzer/TrailAnalyzer/Models/TrailAnalyzer.swift`
-- `TrailAnalyzer/TrailAnalyzer/Models/Risk.swift`
-- `TrailAnalyzer/TrailAnalyzer/Models/TrailInfo.swift`
-- `TrailAnalyzer/TrailAnalyzer/Models/Terrain.swift`
+```
+TrailAnalyzer/TrailAnalyzer/
+├── Views/
+│   ├── ContentView.swift
+│   ├── TrailInfoView.swift
+│   └── PredictionView.swift
+└── Models/
+    ├── TrailAnalyzer.swift
+    ├── TrailAnalyzerModel.mlmodel
+    ├── Risk.swift
+    ├── TrailInfo.swift
+    └── Terrain.swift
+```
 
 **ML Artifacts**
-- `TrailAnalyzer.mlproj/`
-- `TrailAnalyzer .mlmodel`
-- `TrailAnalyzer/TrailAnalyzer/Models/TrailAnalyzerModel.mlmodel`
+```
+TrailAnalyzer.mlproj/
+TrailAnalyzer.mlmodel
+```
+
+**Screenshots**
+
+| Input Form | Prediction Result |
+|------------|-------------------|
+| ![TrailAnalyzer 1](Screenshots/TrailAnalyzer/screenshot-1.PNG) | ![TrailAnalyzer 2](Screenshots/TrailAnalyzer/screenshot-2.PNG) |
 
 ---
 
-### 05 · WeatherForecast
+## 5. WeatherForecast
 
-A clean forecast UI demonstrating component-based design and computed properties.
+A clean forecast UI demonstrating component-based design patterns and computed properties in SwiftUI.
 
-**Highlights**
+**What I learned:** Reusable view components, computed properties, conditional rendering based on data
+
+**Features**
 - Reusable `DayForecast` view component
-- Conditional icon and colour rendering based on weather conditions
+- Conditional icon and color rendering based on weather conditions
 - Clean horizontal forecast layout
 
 **Core Files**
-- `WeatherForecast/WeatherForecast/ContentView.swift`
+```
+WeatherForecast/WeatherForecast/
+└── ContentView.swift
+```
+
+**Screenshots**
+
+| Forecast View | Conditions |
+|---------------|------------|
+| ![WeatherForecast 1](Screenshots/WeatherForecast/screenshot-1.PNG) | ![WeatherForecast 2](Screenshots/WeatherForecast/screenshot-2.PNG) |
 
 ---
 
 ## Running the Apps
 
-1. Open the corresponding `.xcodeproj` file for the app you want to run.
-2. Select an iOS Simulator or a connected physical device from the toolbar.
-3. Hit `⌘R` to build and run.
+1. Open the `.xcodeproj` file for the desired app in Xcode
+2. Select an iOS Simulator or connected physical device
+3. Press `Cmd + R` to build and run
+
+> Requires Xcode 14+ and iOS 16 or later. TrailAnalyzer requires a device/simulator with Core ML support (all modern iOS simulators qualify).
 
 ---
 
-## Screenshot File Structure
+## Tech Stack
 
-Add screenshots to these paths so all README images render correctly:
-
-```
-Screenshots/
-├── DiceView/
-│   ├── screenshot-1.png
-│   └── screenshot-2.png
-├── OnboardingFlow/
-│   ├── screenshot-1.png
-│   └── screenshot-2.png
-├── Pick-a-Pal/
-│   ├── screenshot-1.png
-│   └── screenshot-2.png
-├── TrailAnalyzer/
-│   ├── screenshot-1.png
-│   └── screenshot-2.png
-└── WeatherForecast/
-    ├── screenshot-1.png
-    └── screenshot-2.png
-```
+- **Language:** Swift 5.9
+- **UI Framework:** SwiftUI
+- **ML:** Core ML + Create ML (TrailAnalyzer)
+- **IDE:** Xcode 14+
+- **Target:** iOS 16+
