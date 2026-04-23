@@ -28,8 +28,8 @@ Interactive dice roller that lets users add or remove dice and view random rolls
 
 ### Screenshots
 
-![DiceView Screenshot 1](Screenshots/DiceView/screenshot-1.png)
-![DiceView Screenshot 2](Screenshots/DiceView/screenshot-2.png)
+![DiceView Screenshot 1](Screenshots/DiceView/screenshot-1.PNG)
+![DiceView Screenshot 2](Screenshots/DiceView/screenshot-2.PNG)
 
 ---
 
