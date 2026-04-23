@@ -51,8 +51,8 @@ Multi-page onboarding experience built with `TabView` and a custom feature card 
 
 ### Screenshots
 
-![OnboardingFlow Screenshot 1](Screenshots/OnboardingFlow/screenshot-1.png)
-![OnboardingFlow Screenshot 2](Screenshots/OnboardingFlow/screenshot-2.png)
+![OnboardingFlow Screenshot 1](Screenshots/OnboardingFlow/screenshot-1.PNG)
+![OnboardingFlow Screenshot 2](Screenshots/OnboardingFlow/screenshot-2.PNG)
 
 ---
 
@@ -71,8 +71,8 @@ A random name picker app for groups, classrooms, and team activities.
 
 ### Screenshots
 
-![Pick-a-Pal Screenshot 1](Screenshots/Pick-a-Pal/screenshot-1.png)
-![Pick-a-Pal Screenshot 2](Screenshots/Pick-a-Pal/screenshot-2.png)
+![Pick-a-Pal Screenshot 1](Screenshots/Pick-a-Pal/screenshot-1.PNG)
+![Pick-a-Pal Screenshot 2](Screenshots/Pick-a-Pal/screenshot-2.PNG)
 
 ---
 
@@ -103,8 +103,8 @@ Trail risk prediction app powered by Core ML. Users enter trail data and receive
 
 ### Screenshots
 
-![TrailAnalyzer Screenshot 1](Screenshots/TrailAnalyzer/screenshot-1.png)
-![TrailAnalyzer Screenshot 2](Screenshots/TrailAnalyzer/screenshot-2.png)
+![TrailAnalyzer Screenshot 1](Screenshots/TrailAnalyzer/screenshot-1.PNG)
+![TrailAnalyzer Screenshot 2](Screenshots/TrailAnalyzer/screenshot-2.PNG)
 
 ---
 
@@ -122,8 +122,8 @@ A simple forecast UI demonstrating component-based design and computed propertie
 
 ### Screenshots
 
-![WeatherForecast Screenshot 1](Screenshots/WeatherForecast/screenshot-1.png)
-![WeatherForecast Screenshot 2](Screenshots/WeatherForecast/screenshot-2.png)
+![WeatherForecast Screenshot 1](Screenshots/WeatherForecast/screenshot-1.PNG)
+![WeatherForecast Screenshot 2](Screenshots/WeatherForecast/screenshot-2.PNG)
 
 ---
 
